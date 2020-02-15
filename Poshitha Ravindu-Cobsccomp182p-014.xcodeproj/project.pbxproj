@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C4F36223F88DD500A9C4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F36123F88DD500A9C4BE /* AppDelegate.swift */; };
+		07C4F36423F88DD500A9C4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F36323F88DD500A9C4BE /* ViewController.swift */; };
+		07C4F36723F88DD500A9C4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36523F88DD500A9C4BE /* Main.storyboard */; };
+		07C4F36923F88DD700A9C4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36823F88DD700A9C4BE /* Assets.xcassets */; };
+		07C4F36C23F88DD700A9C4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */; };
+		07C4F37723F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F37623F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift */; };
+		07C4F38223F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F38123F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07C4F37323F88DD800A9C4BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C4F35623F88DD500A9C4BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C4F35D23F88DD500A9C4BE;
+			remoteInfo = "Poshitha Ravindu-Cobsccomp182p-014";
+		};
+		07C4F37E23F88DD800A9C4BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C4F35623F88DD500A9C4BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C4F35D23F88DD500A9C4BE;
+			remoteInfo = "Poshitha Ravindu-Cobsccomp182p-014";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C4F35E23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poshitha Ravindu-Cobsccomp182p-014.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C4F36123F88DD500A9C4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07C4F36323F88DD500A9C4BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07C4F36623F88DD500A9C4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07C4F36823F88DD700A9C4BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07C4F36B23F88DD700A9C4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07C4F36D23F88DD700A9C4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C4F37223F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poshitha Ravindu-Cobsccomp182p-014Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C4F37623F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poshitha_Ravindu_Cobsccomp182p_014Tests.swift; sourceTree = "<group>"; };
+		07C4F37823F88DD800A9C4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C4F37D23F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poshitha Ravindu-Cobsccomp182p-014UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C4F38123F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poshitha_Ravindu_Cobsccomp182p_014UITests.swift; sourceTree = "<group>"; };
+		07C4F38323F88DD800A9C4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C4F35B23F88DD500A9C4BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C4F36F23F88DD800A9C4BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C4F37A23F88DD800A9C4BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C4F35523F88DD500A9C4BE = {
+			isa = PBXGroup;
+			children = (
+				07C4F36023F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */,
+				07C4F37523F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014Tests */,
+				07C4F38023F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests */,
+				07C4F35F23F88DD500A9C4BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C4F35F23F88DD500A9C4BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C4F35E23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014.app */,
+				07C4F37223F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014Tests.xctest */,
+				07C4F37D23F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C4F36023F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */ = {
+			isa = PBXGroup;
+			children = (
+				07C4F36123F88DD500A9C4BE /* AppDelegate.swift */,
+				07C4F36323F88DD500A9C4BE /* ViewController.swift */,
+				07C4F36523F88DD500A9C4BE /* Main.storyboard */,
+				07C4F36823F88DD700A9C4BE /* Assets.xcassets */,
+				07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */,
+				07C4F36D23F88DD700A9C4BE /* Info.plist */,
+			);
+			path = "Poshitha Ravindu-Cobsccomp182p-014";
+			sourceTree = "<group>";
+		};
+		07C4F37523F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014Tests */ = {
+			isa = PBXGroup;
+			children = (
+				07C4F37623F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift */,
+				07C4F37823F88DD800A9C4BE /* Info.plist */,
+			);
+			path = "Poshitha Ravindu-Cobsccomp182p-014Tests";
+			sourceTree = "<group>";
+		};
+		07C4F38023F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests */ = {
+			isa = PBXGroup;
+			children = (
+				07C4F38123F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift */,
+				07C4F38323F88DD800A9C4BE /* Info.plist */,
+			);
+			path = "Poshitha Ravindu-Cobsccomp182p-014UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C4F35D23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C4F38623F88DD800A9C4BE /* Build configuration list for PBXNativeTarget "Poshitha Ravindu-Cobsccomp182p-014" */;
+			buildPhases = (
+				07C4F35A23F88DD500A9C4BE /* Sources */,
+				07C4F35B23F88DD500A9C4BE /* Frameworks */,
+				07C4F35C23F88DD500A9C4BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poshitha Ravindu-Cobsccomp182p-014";
+			productName = "Poshitha Ravindu-Cobsccomp182p-014";
+			productReference = 07C4F35E23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07C4F37123F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C4F38923F88DD800A9C4BE /* Build configuration list for PBXNativeTarget "Poshitha Ravindu-Cobsccomp182p-014Tests" */;
+			buildPhases = (
+				07C4F36E23F88DD800A9C4BE /* Sources */,
+				07C4F36F23F88DD800A9C4BE /* Frameworks */,
+				07C4F37023F88DD800A9C4BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C4F37423F88DD800A9C4BE /* PBXTargetDependency */,
+			);
+			name = "Poshitha Ravindu-Cobsccomp182p-014Tests";
+			productName = "Poshitha Ravindu-Cobsccomp182p-014Tests";
+			productReference = 07C4F37223F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07C4F37C23F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C4F38C23F88DD800A9C4BE /* Build configuration list for PBXNativeTarget "Poshitha Ravindu-Cobsccomp182p-014UITests" */;
+			buildPhases = (
+				07C4F37923F88DD800A9C4BE /* Sources */,
+				07C4F37A23F88DD800A9C4BE /* Frameworks */,
+				07C4F37B23F88DD800A9C4BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C4F37F23F88DD800A9C4BE /* PBXTargetDependency */,
+			);
+			name = "Poshitha Ravindu-Cobsccomp182p-014UITests";
+			productName = "Poshitha Ravindu-Cobsccomp182p-014UITests";
+			productReference = 07C4F37D23F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C4F35623F88DD500A9C4BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = NIBM;
+				TargetAttributes = {
+					07C4F35D23F88DD500A9C4BE = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					07C4F37123F88DD800A9C4BE = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 07C4F35D23F88DD500A9C4BE;
+					};
+					07C4F37C23F88DD800A9C4BE = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 07C4F35D23F88DD500A9C4BE;
+					};
+				};
+			};
+			buildConfigurationList = 07C4F35923F88DD500A9C4BE /* Build configuration list for PBXProject "Poshitha Ravindu-Cobsccomp182p-014" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07C4F35523F88DD500A9C4BE;
+			productRefGroup = 07C4F35F23F88DD500A9C4BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C4F35D23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */,
+				07C4F37123F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014Tests */,
+				07C4F37C23F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07C4F35C23F88DD500A9C4BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C4F36C23F88DD700A9C4BE /* LaunchScreen.storyboard in Resources */,
+				07C4F36923F88DD700A9C4BE /* Assets.xcassets in Resources */,
+				07C4F36723F88DD500A9C4BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C4F37023F88DD800A9C4BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C4F37B23F88DD800A9C4BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C4F35A23F88DD500A9C4BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C4F36423F88DD500A9C4BE /* ViewController.swift in Sources */,
+				07C4F36223F88DD500A9C4BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C4F36E23F88DD800A9C4BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C4F37723F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C4F37923F88DD800A9C4BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C4F38223F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07C4F37423F88DD800A9C4BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C4F35D23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */;
+			targetProxy = 07C4F37323F88DD800A9C4BE /* PBXContainerItemProxy */;
+		};
+		07C4F37F23F88DD800A9C4BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C4F35D23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */;
+			targetProxy = 07C4F37E23F88DD800A9C4BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07C4F36523F88DD500A9C4BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C4F36623F88DD500A9C4BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C4F36B23F88DD700A9C4BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07C4F38423F88DD800A9C4BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07C4F38523F88DD800A9C4BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07C4F38723F88DD800A9C4BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Poshitha Ravindu-Cobsccomp182p-014/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibm.lk.Poshitha-Ravindu-Cobsccomp182p-014";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07C4F38823F88DD800A9C4BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Poshitha Ravindu-Cobsccomp182p-014/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibm.lk.Poshitha-Ravindu-Cobsccomp182p-014";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07C4F38A23F88DD800A9C4BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Poshitha Ravindu-Cobsccomp182p-014Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibm.lk.Poshitha-Ravindu-Cobsccomp182p-014Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poshitha Ravindu-Cobsccomp182p-014.app/Poshitha Ravindu-Cobsccomp182p-014";
+			};
+			name = Debug;
+		};
+		07C4F38B23F88DD800A9C4BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Poshitha Ravindu-Cobsccomp182p-014Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibm.lk.Poshitha-Ravindu-Cobsccomp182p-014Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poshitha Ravindu-Cobsccomp182p-014.app/Poshitha Ravindu-Cobsccomp182p-014";
+			};
+			name = Release;
+		};
+		07C4F38D23F88DD800A9C4BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Poshitha Ravindu-Cobsccomp182p-014UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibm.lk.Poshitha-Ravindu-Cobsccomp182p-014UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Poshitha Ravindu-Cobsccomp182p-014";
+			};
+			name = Debug;
+		};
+		07C4F38E23F88DD800A9C4BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Poshitha Ravindu-Cobsccomp182p-014UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nibm.lk.Poshitha-Ravindu-Cobsccomp182p-014UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Poshitha Ravindu-Cobsccomp182p-014";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C4F35923F88DD500A9C4BE /* Build configuration list for PBXProject "Poshitha Ravindu-Cobsccomp182p-014" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C4F38423F88DD800A9C4BE /* Debug */,
+				07C4F38523F88DD800A9C4BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C4F38623F88DD800A9C4BE /* Build configuration list for PBXNativeTarget "Poshitha Ravindu-Cobsccomp182p-014" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C4F38723F88DD800A9C4BE /* Debug */,
+				07C4F38823F88DD800A9C4BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C4F38923F88DD800A9C4BE /* Build configuration list for PBXNativeTarget "Poshitha Ravindu-Cobsccomp182p-014Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C4F38A23F88DD800A9C4BE /* Debug */,
+				07C4F38B23F88DD800A9C4BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C4F38C23F88DD800A9C4BE /* Build configuration list for PBXNativeTarget "Poshitha Ravindu-Cobsccomp182p-014UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C4F38D23F88DD800A9C4BE /* Debug */,
+				07C4F38E23F88DD800A9C4BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C4F35623F88DD500A9C4BE /* Project object */;
+}
