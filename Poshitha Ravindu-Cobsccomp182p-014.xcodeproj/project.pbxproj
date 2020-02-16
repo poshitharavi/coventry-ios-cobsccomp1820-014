@@ -74,6 +74,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076162D523F909F400B16A17 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				076162DB23F90BAF00B16A17 /* Auth */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		076162D623F90A5600B16A17 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				076162DA23F90BA600B16A17 /* Auth */,
+				07C4F36323F88DD500A9C4BE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		076162D723F90A6300B16A17 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		076162D823F90A7500B16A17 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		076162D923F90A8000B16A17 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				07C4F36123F88DD500A9C4BE /* AppDelegate.swift */,
+				07C4F36823F88DD700A9C4BE /* Assets.xcassets */,
+				07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */,
+				07C4F36D23F88DD700A9C4BE /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		076162DA23F90BA600B16A17 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		076162DB23F90BAF00B16A17 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		076162DC23F90C3E00B16A17 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				07C4F36523F88DD500A9C4BE /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		07C4F35523F88DD500A9C4BE = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +161,12 @@
 		07C4F36023F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */ = {
 			isa = PBXGroup;
 			children = (
-				07C4F36123F88DD500A9C4BE /* AppDelegate.swift */,
-				07C4F36323F88DD500A9C4BE /* ViewController.swift */,
-				07C4F36523F88DD500A9C4BE /* Main.storyboard */,
-				07C4F36823F88DD700A9C4BE /* Assets.xcassets */,
-				07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */,
-				07C4F36D23F88DD700A9C4BE /* Info.plist */,
+				076162D823F90A7500B16A17 /* Extentions */,
+				076162D723F90A6300B16A17 /* Protocols */,
+				076162DC23F90C3E00B16A17 /* Storyboards */,
+				076162D923F90A8000B16A17 /* SupportingFiles */,
+				076162D623F90A5600B16A17 /* ViewControllers */,
+				076162D523F909F400B16A17 /* ViewModels */,
 			);
 			path = "Poshitha Ravindu-Cobsccomp182p-014";
 			sourceTree = "<group>";
@@ -433,7 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Poshitha Ravindu-Cobsccomp182p-014/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Poshitha Ravindu-Cobsccomp182p-014/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Poshitha Ravindu-Cobsccomp182p-014/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Poshitha Ravindu-Cobsccomp182p-014/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
