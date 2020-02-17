@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0708AAD123FAF4F600E2F238 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0708AAD023FAF4F600E2F238 /* Home.storyboard */; };
 		07C4F36223F88DD500A9C4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F36123F88DD500A9C4BE /* AppDelegate.swift */; };
 		07C4F36423F88DD500A9C4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F36323F88DD500A9C4BE /* ViewController.swift */; };
-		07C4F36723F88DD500A9C4BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36523F88DD500A9C4BE /* Main.storyboard */; };
+		07C4F36723F88DD500A9C4BE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36523F88DD500A9C4BE /* Login.storyboard */; };
 		07C4F36923F88DD700A9C4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36823F88DD700A9C4BE /* Assets.xcassets */; };
 		07C4F36C23F88DD700A9C4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */; };
 		07C4F37723F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F37623F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift */; };
@@ -34,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0708AAD023FAF4F600E2F238 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		07C4F35E23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poshitha Ravindu-Cobsccomp182p-014.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C4F36123F88DD500A9C4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C4F36323F88DD500A9C4BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		07C4F36623F88DD500A9C4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07C4F36623F88DD500A9C4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		07C4F36823F88DD700A9C4BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C4F36B23F88DD700A9C4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07C4F36D23F88DD700A9C4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,7 +135,8 @@
 		076162DC23F90C3E00B16A17 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				07C4F36523F88DD500A9C4BE /* Main.storyboard */,
+				07C4F36523F88DD500A9C4BE /* Login.storyboard */,
+				0708AAD023FAF4F600E2F238 /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -295,7 +298,8 @@
 			files = (
 				07C4F36C23F88DD700A9C4BE /* LaunchScreen.storyboard in Resources */,
 				07C4F36923F88DD700A9C4BE /* Assets.xcassets in Resources */,
-				07C4F36723F88DD500A9C4BE /* Main.storyboard in Resources */,
+				07C4F36723F88DD500A9C4BE /* Login.storyboard in Resources */,
+				0708AAD123FAF4F600E2F238 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +361,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		07C4F36523F88DD500A9C4BE /* Main.storyboard */ = {
+		07C4F36523F88DD500A9C4BE /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				07C4F36623F88DD500A9C4BE /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */ = {
