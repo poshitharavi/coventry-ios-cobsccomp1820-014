@@ -20,6 +20,10 @@
 		07C7DB8023FD58B200E7356E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB7F23FD58B200E7356E /* SignInViewController.swift */; };
 		07C7DB8623FD5E1800E7356E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8523FD5E1800E7356E /* User.swift */; };
 		07C7DB8B23FD6D6400E7356E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8A23FD6D6400E7356E /* Event.swift */; };
+		07C7DB8D23FDA98C00E7356E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8C23FDA98C00E7356E /* HomeViewController.swift */; };
+		07C7DB8F23FDAA6A00E7356E /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8E23FDAA6A00E7356E /* GuestViewController.swift */; };
+		07C7DB9223FDB08300E7356E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB9123FDB08300E7356E /* EventTableViewCell.swift */; };
+		07C7DB9523FDB7DC00E7356E /* GuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB9423FDB7DC00E7356E /* GuestTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		07C7DB7F23FD58B200E7356E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		07C7DB8523FD5E1800E7356E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07C7DB8A23FD6D6400E7356E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		07C7DB8C23FDA98C00E7356E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		07C7DB8E23FDAA6A00E7356E /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
+		07C7DB9123FDB08300E7356E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		07C7DB9423FDB7DC00E7356E /* GuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 			children = (
 				07C7DB7C23FD576D00E7356E /* RegisterViewController.swift */,
 				07C7DB7F23FD58B200E7356E /* SignInViewController.swift */,
+				07C7DB8C23FDA98C00E7356E /* HomeViewController.swift */,
+				07C7DB8E23FDAA6A00E7356E /* GuestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,8 +189,26 @@
 		07C7DB8223FD5B0E00E7356E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				07C7DB9323FDB7C100E7356E /* GuestView */,
+				07C7DB9023FDB05400E7356E /* HomeView */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		07C7DB9023FDB05400E7356E /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				07C7DB9123FDB08300E7356E /* EventTableViewCell.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		07C7DB9323FDB7C100E7356E /* GuestView */ = {
+			isa = PBXGroup;
+			children = (
+				07C7DB9423FDB7DC00E7356E /* GuestTableViewCell.swift */,
+			);
+			path = GuestView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,8 +348,12 @@
 				07C7DB8623FD5E1800E7356E /* User.swift in Sources */,
 				07C4F36223F88DD500A9C4BE /* AppDelegate.swift in Sources */,
 				07C7DB7D23FD576D00E7356E /* RegisterViewController.swift in Sources */,
+				07C7DB9523FDB7DC00E7356E /* GuestTableViewCell.swift in Sources */,
 				07C7DB8023FD58B200E7356E /* SignInViewController.swift in Sources */,
+				07C7DB8F23FDAA6A00E7356E /* GuestViewController.swift in Sources */,
 				07C7DB8B23FD6D6400E7356E /* Event.swift in Sources */,
+				07C7DB9223FDB08300E7356E /* EventTableViewCell.swift in Sources */,
+				07C7DB8D23FDA98C00E7356E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

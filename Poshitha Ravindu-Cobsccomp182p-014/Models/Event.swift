@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct event {
+struct Event {
     var title:String
     var discription:String
     var location:String
