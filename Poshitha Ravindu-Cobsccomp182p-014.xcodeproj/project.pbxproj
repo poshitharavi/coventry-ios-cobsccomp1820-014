@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0708AAD123FAF4F600E2F238 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0708AAD023FAF4F600E2F238 /* Home.storyboard */; };
+		070FAEC123FB77B80075BF0B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070FAEC023FB77B80075BF0B /* Profile.storyboard */; };
 		07C4F36223F88DD500A9C4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F36123F88DD500A9C4BE /* AppDelegate.swift */; };
-		07C4F36423F88DD500A9C4BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F36323F88DD500A9C4BE /* ViewController.swift */; };
 		07C4F36723F88DD500A9C4BE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36523F88DD500A9C4BE /* Login.storyboard */; };
 		07C4F36923F88DD700A9C4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36823F88DD700A9C4BE /* Assets.xcassets */; };
 		07C4F36C23F88DD700A9C4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */; };
 		07C4F37723F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F37623F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift */; };
 		07C4F38223F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F38123F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift */; };
+		07C7DB7B23FD501A00E7356E /* Guest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C7DB7A23FD501A00E7356E /* Guest.storyboard */; };
+		07C7DB7D23FD576D00E7356E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB7C23FD576D00E7356E /* RegisterViewController.swift */; };
+		07C7DB8023FD58B200E7356E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB7F23FD58B200E7356E /* SignInViewController.swift */; };
+		07C7DB8623FD5E1800E7356E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8523FD5E1800E7356E /* User.swift */; };
+		07C7DB8B23FD6D6400E7356E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8A23FD6D6400E7356E /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +41,9 @@
 
 /* Begin PBXFileReference section */
 		0708AAD023FAF4F600E2F238 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		070FAEC023FB77B80075BF0B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		07C4F35E23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poshitha Ravindu-Cobsccomp182p-014.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C4F36123F88DD500A9C4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07C4F36323F88DD500A9C4BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07C4F36623F88DD500A9C4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		07C4F36823F88DD700A9C4BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C4F36B23F88DD700A9C4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		07C4F37D23F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poshitha Ravindu-Cobsccomp182p-014UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C4F38123F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poshitha_Ravindu_Cobsccomp182p_014UITests.swift; sourceTree = "<group>"; };
 		07C4F38323F88DD800A9C4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C7DB7A23FD501A00E7356E /* Guest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guest.storyboard; sourceTree = "<group>"; };
+		07C7DB7C23FD576D00E7356E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		07C7DB7F23FD58B200E7356E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		07C7DB8523FD5E1800E7356E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		07C7DB8A23FD6D6400E7356E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,35 +86,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		076162D523F909F400B16A17 /* ViewModels */ = {
+		076162D523F909F400B16A17 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				076162DB23F90BAF00B16A17 /* Auth */,
+				07C7DB8523FD5E1800E7356E /* User.swift */,
+				07C7DB8A23FD6D6400E7356E /* Event.swift */,
 			);
-			path = ViewModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		076162D623F90A5600B16A17 /* ViewControllers */ = {
+		076162D623F90A5600B16A17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				076162DA23F90BA600B16A17 /* Auth */,
-				07C4F36323F88DD500A9C4BE /* ViewController.swift */,
+				07C7DB7C23FD576D00E7356E /* RegisterViewController.swift */,
+				07C7DB7F23FD58B200E7356E /* SignInViewController.swift */,
 			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		076162D723F90A6300B16A17 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		076162D823F90A7500B16A17 /* Extentions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extentions;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		076162D923F90A8000B16A17 /* SupportingFiles */ = {
@@ -112,31 +109,19 @@
 			children = (
 				07C4F36123F88DD500A9C4BE /* AppDelegate.swift */,
 				07C4F36823F88DD700A9C4BE /* Assets.xcassets */,
-				07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */,
 				07C4F36D23F88DD700A9C4BE /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		076162DA23F90BA600B16A17 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		076162DB23F90BAF00B16A17 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
 		076162DC23F90C3E00B16A17 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */,
 				07C4F36523F88DD500A9C4BE /* Login.storyboard */,
 				0708AAD023FAF4F600E2F238 /* Home.storyboard */,
+				070FAEC023FB77B80075BF0B /* Profile.storyboard */,
+				07C7DB7A23FD501A00E7356E /* Guest.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -164,12 +149,11 @@
 		07C4F36023F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */ = {
 			isa = PBXGroup;
 			children = (
-				076162D823F90A7500B16A17 /* Extentions */,
-				076162D723F90A6300B16A17 /* Protocols */,
+				076162D623F90A5600B16A17 /* Controllers */,
+				076162D523F909F400B16A17 /* Models */,
 				076162DC23F90C3E00B16A17 /* Storyboards */,
 				076162D923F90A8000B16A17 /* SupportingFiles */,
-				076162D623F90A5600B16A17 /* ViewControllers */,
-				076162D523F909F400B16A17 /* ViewModels */,
+				07C7DB8223FD5B0E00E7356E /* View */,
 			);
 			path = "Poshitha Ravindu-Cobsccomp182p-014";
 			sourceTree = "<group>";
@@ -190,6 +174,13 @@
 				07C4F38323F88DD800A9C4BE /* Info.plist */,
 			);
 			path = "Poshitha Ravindu-Cobsccomp182p-014UITests";
+			sourceTree = "<group>";
+		};
+		07C7DB8223FD5B0E00E7356E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +287,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				070FAEC123FB77B80075BF0B /* Profile.storyboard in Resources */,
 				07C4F36C23F88DD700A9C4BE /* LaunchScreen.storyboard in Resources */,
 				07C4F36923F88DD700A9C4BE /* Assets.xcassets in Resources */,
+				07C7DB7B23FD501A00E7356E /* Guest.storyboard in Resources */,
 				07C4F36723F88DD500A9C4BE /* Login.storyboard in Resources */,
 				0708AAD123FAF4F600E2F238 /* Home.storyboard in Resources */,
 			);
@@ -324,8 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C4F36423F88DD500A9C4BE /* ViewController.swift in Sources */,
+				07C7DB8623FD5E1800E7356E /* User.swift in Sources */,
 				07C4F36223F88DD500A9C4BE /* AppDelegate.swift in Sources */,
+				07C7DB7D23FD576D00E7356E /* RegisterViewController.swift in Sources */,
+				07C7DB8023FD58B200E7356E /* SignInViewController.swift in Sources */,
+				07C7DB8B23FD6D6400E7356E /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
