@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ip-F3-dmX">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -44,13 +44,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.20291957259999999" green="0.65117585659999999" blue="0.98970907929999996" alpha="0.92259022889999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="d3Z-6V-Lab"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gFo-w3-bcd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KF4-rh-w38" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39.130434782608695" y="55.580357142857139"/>
+            <point key="canvasLocation" x="871.01449275362324" y="55.580357142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EdE-SC-HU1">
@@ -94,13 +95,31 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.20291957259999999" green="0.65117585659999999" blue="0.98970907929999996" alpha="0.92259022889999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="ey2-9L-9AC"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Hl-0w-2uz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828.98550724637687" y="55.580357142857139"/>
+            <point key="canvasLocation" x="1739.1304347826087" y="55.580357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h5J-Sh-sHb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6ip-F3-dmX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bQL-mT-5yK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VNt-yJ-359" kind="relationship" relationship="rootViewController" id="pHA-pD-7eC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y12-8A-Drq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.130434782608695" y="55.580357142857139"/>
         </scene>
     </scenes>
 </document>

@@ -18,12 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="893-cz-hB8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nibm_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Q4U-NJ-u2e">
-                                <rect key="frame" x="20" y="287" width="374" height="128"/>
+                                <rect key="frame" x="67" y="381" width="295" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.20291957259999999" green="0.65117585659999999" blue="0.98970907929999996" alpha="0.92259022889999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="893-cz-hB8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HpJ-t7-hb3"/>
+                            <constraint firstItem="893-cz-hB8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o2C-em-Lj4"/>
+                            <constraint firstAttribute="bottom" secondItem="893-cz-hB8" secondAttribute="bottom" id="sRI-ly-yAC"/>
+                            <constraint firstItem="893-cz-hB8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vHd-aR-ZhP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -33,6 +42,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background_image" width="650" height="1155"/>
         <image name="nibm_logo" width="300" height="101"/>
     </resources>
 </document>
