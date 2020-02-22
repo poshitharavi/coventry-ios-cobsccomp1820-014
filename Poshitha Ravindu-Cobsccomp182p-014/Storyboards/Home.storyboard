@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="6iX-nA-Egg">
             <objects>
                 <tableViewController id="jK1-NF-eT4" customClass="HomeViewController" customModule="Poshitha_Ravindu_Cobsccomp182p_014" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,9 +105,16 @@
                             <outlet property="delegate" destination="jK1-NF-eT4" id="1L4-ZN-LWc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="aAA-1E-Mb4"/>
+                    <navigationItem key="navigationItem" title="Home" id="aAA-1E-Mb4">
+                        <barButtonItem key="leftBarButtonItem" title="Sign In" id="Qoq-xd-Ryb">
+                            <connections>
+                                <action selector="signInOutBtnClick:" destination="jK1-NF-eT4" id="PIX-67-mzb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="homeTableView" destination="bvI-gc-xab" id="3Zc-c1-25c"/>
+                        <outlet property="signInOutBtn" destination="Qoq-xd-Ryb" id="H0q-kc-zY1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKW-sz-0oP" userLabel="First Responder" sceneMemberID="firstResponder"/>

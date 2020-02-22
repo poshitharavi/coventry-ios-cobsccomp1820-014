@@ -60,23 +60,35 @@ class RegisterViewController: UIViewController {
     //register button acction
     @IBAction func registerBtn(_ sender: Any) {
     
-        //varibale initilizing with null check
+        //get text inputs and check nullebles
         guard let email = emailTxt.text, email.isNotEmpty ,
             let name = nameTxt.text, name.isNotEmpty ,
             let password = passwordTxt.text , password.isNotEmpty ,
-            let mobileNumber = mobileNumberTxt.text, mobileNumber.isNotEmpty else {return }
+            let mobileNumber = mobileNumberTxt.text, mobileNumber.isNotEmpty else {
+        
+                self.customAlert(title: "Error", msg: "Please fill out all fields.")//set custom alert if user missed filling text box
+                return
+        }
+        
+        guard let confirmPassword = confirmPasswordTxt.text, confirmPassword == password else {
+            customAlert(title: "Error", msg: "Password do not match")
+            return
+        }
         
         activityIndicator.startAnimating()//start the animator when the button is clicked and the input values are correct
         
+        //firebase auth for signup the user in registration
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             
             if let error = error {
                 debugPrint(error)
+                self.handleFireAuthError(error: error)
+                self.activityIndicator.stopAnimating()
                 return
             }
             
             self.activityIndicator.stopAnimating() //stop the animator
-            print("Registered successfully" )
+            self.navigationController?.popViewController(animated: true)
         }
         
     }

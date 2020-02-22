@@ -17,16 +17,17 @@
 		07C4F36C23F88DD700A9C4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36A23F88DD700A9C4BE /* LaunchScreen.storyboard */; };
 		07C4F37723F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F37623F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014Tests.swift */; };
 		07C4F38223F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F38123F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift */; };
-		07C7DB7B23FD501A00E7356E /* Guest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C7DB7A23FD501A00E7356E /* Guest.storyboard */; };
 		07C7DB7D23FD576D00E7356E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB7C23FD576D00E7356E /* RegisterViewController.swift */; };
 		07C7DB8023FD58B200E7356E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB7F23FD58B200E7356E /* SignInViewController.swift */; };
 		07C7DB8623FD5E1800E7356E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8523FD5E1800E7356E /* User.swift */; };
 		07C7DB8B23FD6D6400E7356E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8A23FD6D6400E7356E /* Event.swift */; };
 		07C7DB8D23FDA98C00E7356E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8C23FDA98C00E7356E /* HomeViewController.swift */; };
-		07C7DB8F23FDAA6A00E7356E /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8E23FDAA6A00E7356E /* GuestViewController.swift */; };
 		07C7DB9223FDB08300E7356E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB9123FDB08300E7356E /* EventTableViewCell.swift */; };
 		07C7DB9523FDB7DC00E7356E /* GuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB9423FDB7DC00E7356E /* GuestTableViewCell.swift */; };
 		07D1FE20240174150038D2ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1FE1F240174150038D2ED /* Constants.swift */; };
+		07D1FE23240180080038D2ED /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1FE22240180080038D2ED /* RoundedView.swift */; };
+		07D1FE272401A8410038D2ED /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1FE252401A8410038D2ED /* ForgotPasswordViewController.swift */; };
+		07D1FE282401A8410038D2ED /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D1FE262401A8410038D2ED /* ForgotPasswordViewController.xib */; };
 		18EC115EFA1EABFFFA8F9124 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11524A29FC74EFD51E1B9070 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework */; };
 		91E2B45B418BD6CD3A409E85 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7692A85001F542F3CE0ACEAE /* Pods_Poshitha_Ravindu_Cobsccomp182p_014.framework */; };
 		CE92F1EC32208600F2E63FD6 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366CAD658CD819D8969A01D8 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework */; };
@@ -66,16 +67,17 @@
 		07C4F37D23F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poshitha Ravindu-Cobsccomp182p-014UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C4F38123F88DD800A9C4BE /* Poshitha_Ravindu_Cobsccomp182p_014UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poshitha_Ravindu_Cobsccomp182p_014UITests.swift; sourceTree = "<group>"; };
 		07C4F38323F88DD800A9C4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07C7DB7A23FD501A00E7356E /* Guest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guest.storyboard; sourceTree = "<group>"; };
 		07C7DB7C23FD576D00E7356E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		07C7DB7F23FD58B200E7356E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		07C7DB8523FD5E1800E7356E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		07C7DB8A23FD6D6400E7356E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		07C7DB8C23FDA98C00E7356E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		07C7DB8E23FDAA6A00E7356E /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
 		07C7DB9123FDB08300E7356E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		07C7DB9423FDB7DC00E7356E /* GuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTableViewCell.swift; sourceTree = "<group>"; };
 		07D1FE1F240174150038D2ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07D1FE22240180080038D2ED /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		07D1FE252401A8410038D2ED /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		07D1FE262401A8410038D2ED /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		11524A29FC74EFD51E1B9070 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		366CAD658CD819D8969A01D8 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6084853CAC0D3D3716FB806E /* Pods-Poshitha Ravindu-Cobsccomp182p-014.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poshitha Ravindu-Cobsccomp182p-014.release.xcconfig"; path = "Target Support Files/Pods-Poshitha Ravindu-Cobsccomp182p-014/Pods-Poshitha Ravindu-Cobsccomp182p-014.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,10 +129,10 @@
 		076162D623F90A5600B16A17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				07D1FE252401A8410038D2ED /* ForgotPasswordViewController.swift */,
 				07C7DB7C23FD576D00E7356E /* RegisterViewController.swift */,
 				07C7DB7F23FD58B200E7356E /* SignInViewController.swift */,
 				07C7DB8C23FDA98C00E7356E /* HomeViewController.swift */,
-				07C7DB8E23FDAA6A00E7356E /* GuestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -153,7 +155,6 @@
 				07C4F36523F88DD500A9C4BE /* Login.storyboard */,
 				0708AAD023FAF4F600E2F238 /* Home.storyboard */,
 				070FAEC023FB77B80075BF0B /* Profile.storyboard */,
-				07C7DB7A23FD501A00E7356E /* Guest.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -192,6 +193,7 @@
 		07C4F36023F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */ = {
 			isa = PBXGroup;
 			children = (
+				07D1FE242401A8040038D2ED /* XIBs */,
 				07ABF11C24012A3400E83479 /* Utils */,
 				076162D623F90A5600B16A17 /* Controllers */,
 				076162D523F909F400B16A17 /* Models */,
@@ -223,6 +225,7 @@
 		07C7DB8223FD5B0E00E7356E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				07D1FE2124017FCE0038D2ED /* CustomView */,
 				07C7DB9323FDB7C100E7356E /* GuestView */,
 				07C7DB9023FDB05400E7356E /* HomeView */,
 			);
@@ -243,6 +246,22 @@
 				07C7DB9423FDB7DC00E7356E /* GuestTableViewCell.swift */,
 			);
 			path = GuestView;
+			sourceTree = "<group>";
+		};
+		07D1FE2124017FCE0038D2ED /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				07D1FE22240180080038D2ED /* RoundedView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		07D1FE242401A8040038D2ED /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				07D1FE262401A8410038D2ED /* ForgotPasswordViewController.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		73BCE76BD42E0BE029331B5C /* Pods */ = {
@@ -379,8 +398,8 @@
 			files = (
 				070FAEC123FB77B80075BF0B /* Profile.storyboard in Resources */,
 				07C4F36C23F88DD700A9C4BE /* LaunchScreen.storyboard in Resources */,
+				07D1FE282401A8410038D2ED /* ForgotPasswordViewController.xib in Resources */,
 				07C4F36923F88DD700A9C4BE /* Assets.xcassets in Resources */,
-				07C7DB7B23FD501A00E7356E /* Guest.storyboard in Resources */,
 				07C4F36723F88DD500A9C4BE /* Login.storyboard in Resources */,
 				0708AAD123FAF4F600E2F238 /* Home.storyboard in Resources */,
 				07ABF1242401333700E83479 /* GoogleService-Info.plist in Resources */,
@@ -518,7 +537,8 @@
 				07C7DB9523FDB7DC00E7356E /* GuestTableViewCell.swift in Sources */,
 				07C7DB8023FD58B200E7356E /* SignInViewController.swift in Sources */,
 				07ABF12224012CAB00E83479 /* Extensions.swift in Sources */,
-				07C7DB8F23FDAA6A00E7356E /* GuestViewController.swift in Sources */,
+				07D1FE23240180080038D2ED /* RoundedView.swift in Sources */,
+				07D1FE272401A8410038D2ED /* ForgotPasswordViewController.swift in Sources */,
 				07C7DB8B23FD6D6400E7356E /* Event.swift in Sources */,
 				07C7DB9223FDB08300E7356E /* EventTableViewCell.swift in Sources */,
 				07C7DB8D23FDA98C00E7356E /* HomeViewController.swift in Sources */,
