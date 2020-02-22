@@ -16,7 +16,8 @@ class GuestViewController: UITableViewController {
         
         Event(title: "Event One", discription: "Test event make by me", location: "Wanniya", publisher: "Poshitha Ravindu", eventimageName: "event_pic_1"),
         Event(title: "Event Two", discription: "Test event make by me", location: "Colombo", publisher: "Poshitha Warnapala", eventimageName: "event_pic_2"),
-        Event(title: "Event 3", discription: "මමයි හාදුඅෛ ායු ාුල දා", location: "No ware", publisher: "Rumesh Chandima", eventimageName: "event_pic_3")
+        Event(title: "Event 3", discription: "මමයි හාදුඅෛ ායු ාුල දා", location: "No ware", publisher: "Rumesh Chandima", eventimageName: "event_pic_3"),
+        Event(title: "Event 4", discription: "Test", location: "No ware", publisher: "Suneth Chandima", eventimageName: "event_pic_4")
     ]
     
     override func viewDidLoad() {

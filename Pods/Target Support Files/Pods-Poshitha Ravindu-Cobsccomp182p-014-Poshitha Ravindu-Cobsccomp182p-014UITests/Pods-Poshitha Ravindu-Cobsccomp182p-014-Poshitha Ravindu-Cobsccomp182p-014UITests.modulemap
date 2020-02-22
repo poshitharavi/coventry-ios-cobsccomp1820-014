@@ -1,0 +1,6 @@
+framework module Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests {
+  umbrella header "Pods-Poshitha Ravindu-Cobsccomp182p-014-Poshitha Ravindu-Cobsccomp182p-014UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
