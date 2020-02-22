@@ -50,7 +50,7 @@ class RegisterViewController: UIViewController {
         //check the password and confirm password is mathing or not
         if passwordTxt.text != confirmPasswordTxt.text {
             //set error image to image views in both
-            checkConfirmPasswordImg.image = UIImage(named: "error_icon")
+            checkConfirmPasswordImg.image = UIImage(named: ImageFiles.ErrorIcon)
         }else {
             checkConfirmPasswordImg.isHidden = true
         }

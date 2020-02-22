@@ -26,6 +26,7 @@
 		07C7DB8F23FDAA6A00E7356E /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB8E23FDAA6A00E7356E /* GuestViewController.swift */; };
 		07C7DB9223FDB08300E7356E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB9123FDB08300E7356E /* EventTableViewCell.swift */; };
 		07C7DB9523FDB7DC00E7356E /* GuestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7DB9423FDB7DC00E7356E /* GuestTableViewCell.swift */; };
+		07D1FE20240174150038D2ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D1FE1F240174150038D2ED /* Constants.swift */; };
 		18EC115EFA1EABFFFA8F9124 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11524A29FC74EFD51E1B9070 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework */; };
 		91E2B45B418BD6CD3A409E85 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7692A85001F542F3CE0ACEAE /* Pods_Poshitha_Ravindu_Cobsccomp182p_014.framework */; };
 		CE92F1EC32208600F2E63FD6 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366CAD658CD819D8969A01D8 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework */; };
@@ -74,6 +75,7 @@
 		07C7DB8E23FDAA6A00E7356E /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
 		07C7DB9123FDB08300E7356E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		07C7DB9423FDB7DC00E7356E /* GuestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestTableViewCell.swift; sourceTree = "<group>"; };
+		07D1FE1F240174150038D2ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11524A29FC74EFD51E1B9070 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		366CAD658CD819D8969A01D8 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6084853CAC0D3D3716FB806E /* Pods-Poshitha Ravindu-Cobsccomp182p-014.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poshitha Ravindu-Cobsccomp182p-014.release.xcconfig"; path = "Target Support Files/Pods-Poshitha Ravindu-Cobsccomp182p-014/Pods-Poshitha Ravindu-Cobsccomp182p-014.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				07ABF12124012CAB00E83479 /* Extensions.swift */,
+				07D1FE1F240174150038D2ED /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -167,12 +170,12 @@
 		07C4F35523F88DD500A9C4BE = {
 			isa = PBXGroup;
 			children = (
+				B6FE9D3DE686D5E96E753660 /* Frameworks */,
+				73BCE76BD42E0BE029331B5C /* Pods */,
 				07C4F36023F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014 */,
 				07C4F37523F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014Tests */,
 				07C4F38023F88DD800A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014UITests */,
 				07C4F35F23F88DD500A9C4BE /* Products */,
-				73BCE76BD42E0BE029331B5C /* Pods */,
-				B6FE9D3DE686D5E96E753660 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -509,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C7DB8623FD5E1800E7356E /* User.swift in Sources */,
+				07D1FE20240174150038D2ED /* Constants.swift in Sources */,
 				07C4F36223F88DD500A9C4BE /* AppDelegate.swift in Sources */,
 				07C7DB7D23FD576D00E7356E /* RegisterViewController.swift in Sources */,
 				07C7DB9523FDB7DC00E7356E /* GuestTableViewCell.swift in Sources */,
