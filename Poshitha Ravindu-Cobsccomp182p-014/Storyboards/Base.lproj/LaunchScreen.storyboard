@@ -21,16 +21,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image" translatesAutoresizingMaskIntoConstraints="NO" id="893-cz-hB8">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nibm_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Q4U-NJ-u2e">
-                                <rect key="frame" x="67" y="381" width="295" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nibm_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Q4U-NJ-u2e">
+                                <rect key="frame" x="50" y="364" width="314" height="101"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="893-cz-hB8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HpJ-t7-hb3"/>
+                            <constraint firstItem="Q4U-NJ-u2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="OWW-Ar-xnl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q4U-NJ-u2e" secondAttribute="bottom" constant="397" id="kd5-fl-rW0"/>
                             <constraint firstItem="893-cz-hB8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o2C-em-Lj4"/>
                             <constraint firstAttribute="bottom" secondItem="893-cz-hB8" secondAttribute="bottom" id="sRI-ly-yAC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q4U-NJ-u2e" secondAttribute="trailing" constant="50" id="svr-yX-bwo"/>
                             <constraint firstItem="893-cz-hB8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vHd-aR-ZhP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,7 +44,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background_image" width="650" height="1155"/>
+        <image name="background_image" width="592" height="1080"/>
         <image name="nibm_logo" width="300" height="101"/>
     </resources>
 </document>

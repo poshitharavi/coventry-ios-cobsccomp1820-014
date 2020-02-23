@@ -7,11 +7,14 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 struct Event {
     var title:String
+    var id : String
     var discription:String
     var location:String
     var publisher:String
-    var eventimageName:String
+    var eventimageUrl:String
+    var timeStamp : Timestamp
 }

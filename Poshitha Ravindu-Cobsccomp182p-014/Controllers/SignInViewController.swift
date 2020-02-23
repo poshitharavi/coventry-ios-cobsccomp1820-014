@@ -45,7 +45,7 @@ class SignInViewController: UIViewController {
             
             if let error = error {
                 debugPrint(error)
-                self?.handleFireAuthError(error: error)//set the extention to check firebase validation
+                Auth.auth().handleFireAuthError(error: error, viewController:  self!)//set the extention toncheck firebase validation
                 self?.activityIndicator.stopAnimating()
                 return
             }

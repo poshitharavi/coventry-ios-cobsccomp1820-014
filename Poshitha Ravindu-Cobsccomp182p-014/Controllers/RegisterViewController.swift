@@ -82,7 +82,7 @@ class RegisterViewController: UIViewController {
             
             if let error = error {
                 debugPrint(error)
-                self.handleFireAuthError(error: error)
+                Auth.auth().handleFireAuthError(error: error, viewController:  self)
                 self.activityIndicator.stopAnimating()
                 return
             }
