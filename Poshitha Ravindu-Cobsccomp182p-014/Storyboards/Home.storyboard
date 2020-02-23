@@ -17,7 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="BH4-Hk-uFA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pza-Wi-sJW">
+                                <rect key="frame" x="1" y="88" width="412" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N6V-Xc-2CU" firstAttribute="trailing" secondItem="pza-Wi-sJW" secondAttribute="trailing" constant="1" id="5nQ-f8-JoX"/>
+                            <constraint firstItem="pza-Wi-sJW" firstAttribute="leading" secondItem="N6V-Xc-2CU" secondAttribute="leading" constant="1" id="POh-dw-Amw"/>
+                            <constraint firstItem="pza-Wi-sJW" firstAttribute="top" secondItem="N6V-Xc-2CU" secondAttribute="top" id="hcy-QD-vqG"/>
+                            <constraint firstAttribute="bottom" secondItem="pza-Wi-sJW" secondAttribute="bottom" id="yi0-Eb-C1D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="N6V-Xc-2CU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="P5F-iz-IhC">
@@ -26,14 +38,29 @@
                                 <action selector="signInOutBtnClick:" destination="qeU-yV-1ga" id="Tez-EH-Wbc"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Profile" id="58V-4O-7TW">
+                            <connections>
+                                <segue destination="e44-Qx-QSX" kind="show" id="bSK-04-kkI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="eventTableView" destination="pza-Wi-sJW" id="0Qu-NT-Pdq"/>
+                        <outlet property="profileBarBtn" destination="58V-4O-7TW" id="vQI-Lz-rDk"/>
                         <outlet property="signInOutBtn" destination="ksM-dr-ewm" id="h5a-j3-NWG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rc4-Ao-SK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2363.768115942029" y="86.383928571428569"/>
+            <point key="canvasLocation" x="2362.3188405797105" y="86.383928571428569"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="APC-Tp-dhd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="e44-Qx-QSX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sLD-I0-7nk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3264" y="-60"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QG4-Kh-Ki1">

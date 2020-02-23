@@ -10,9 +10,19 @@ import Foundation
 
 struct User {
     var name:String
+    var id : String
     var email:String
     var contactnumber:Int
-    var password:String
     var facebooklink:String
-    var profilepicname:String
+    var profilepicUrl:String
+    
+    
+    init(data :[String : Any]) {
+        self.name = data["name"] as? String ?? ""
+        self.id = data["id"] as? String ?? ""
+        self.email = data["email"] as? String ?? ""
+        self.contactnumber = data["contactnumber"] as? Int ?? 0
+        self.facebooklink = data["facebooklink"] as? String ?? ""
+        self.profilepicUrl = data["profilepicUrl"] as? String ?? ""
+    }
 }

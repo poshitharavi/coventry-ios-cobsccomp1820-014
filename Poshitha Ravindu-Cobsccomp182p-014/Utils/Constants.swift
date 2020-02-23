@@ -28,3 +28,6 @@ struct ImageFiles {
 struct AppColors {
     static let Blue = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
 }
+struct Identifiers {
+    static let eventCellIdentifier = "EventTableViewCell"
+}
