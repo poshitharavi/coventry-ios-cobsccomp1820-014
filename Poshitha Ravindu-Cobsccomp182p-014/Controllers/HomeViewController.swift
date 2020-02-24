@@ -38,9 +38,6 @@ class HomeViewController: UIViewController {
     //when the view apears
     override func viewDidAppear(_ animated: Bool) {
         
-        //fetchDocument()
-        fetchCollection()
-        
         if let _ = Auth.auth().currentUser{
             signInOutBtn.title = "Sign Out"
             profileBarBtn.isEnabled = true
@@ -48,11 +45,15 @@ class HomeViewController: UIViewController {
             signInOutBtn.title = "Sign In"
             profileBarBtn.isEnabled = false
         }
+        
+        setEventListner()//Initilizing the listner
     }
     
     //remove listner when the view is hidden
     override func viewWillDisappear(_ animated: Bool) {
-        listner.remove()
+        listner.remove()//removing the listner when view is disappear
+        events.removeAll()//remove all the data in the array
+        eventTableView.reloadData()//reload the table view
     }
     
     //sign in and sign out btn click
@@ -82,54 +83,63 @@ class HomeViewController: UIViewController {
     }
     
     
-    func fetchDocument(){
-        let docRef = db.collection("Events").document("PTbow3qSREnAFd5vyyCN")
+    func setEventListner() {//document listner
         
-        
-        listner =  docRef.addSnapshotListener { (snap, error) in
-            self.events.removeAll()
-            guard let data = snap?.data() else {return}
-            let newEvent = Event.init(data: data)
-            self.events.append(newEvent)
-            self.eventTableView.reloadData()
-        }
-        
-//        docRef.getDocument { (snap, error) in
-//            guard let data = snap?.data() else{return}
-//
-//            let event = Event.init(data: data)
-//
-//            self.events.append(event)
-//            self.eventTableView.reloadData()
-//
-//        }
-        
+        listner = db.collection("Events").addSnapshotListener({ (snap, error) in
+            if let error = error{
+                debugPrint(error.localizedDescription)
+                return
+            }
+            
+            snap?.documentChanges.forEach({ (change) in
+                let data = change.document.data()
+                let event = Event.init(data: data)
+                
+                switch change.type{//checking the change mode
+                case .added:
+                    self.onEventAdded(change: change, event: event)
+                case .modified:
+                    self.onEventModified(change: change, event: event)
+                case .removed:
+                    self.onEventRemoved(change: change)
+                }
+            })
+        })
     }
     
-    func fetchCollection(){
+    
+    func onEventAdded(change : DocumentChange, event : Event){//event added
         
-        let collectionReference = db.collection("Events")
+        let newIndex = Int(change.newIndex)
+        events.insert(event, at: newIndex)
+        eventTableView.insertRows(at: [IndexPath(item: newIndex, section: 0)], with: .none)
+    }
+    
+    func onEventModified(change : DocumentChange, event : Event) {//event modified
         
-        listner = collectionReference.addSnapshotListener { (snap, error) in
-            self.events.removeAll()
-            guard let documents = snap?.documents else {return}
-            for document in documents{
-                let data = document.data()
-                let newEvent = Event(data: data)
-                self.events.append(newEvent)
-                self.eventTableView.reloadData()
-            }
+        if change.newIndex == change.oldIndex {//if the previous index is same as the current index
+            
+            let index = Int(change.newIndex)
+            events[index] = event
+            eventTableView.reloadRows(at: [IndexPath(item: index, section: 0)], with: .none)
+            
+        }else{//the item index has been changed from the prevous index
+            
+            let oldIndex = Int(change.oldIndex)
+            let newIndex = Int(change.newIndex)
+            
+            events.remove(at: oldIndex)
+            events.insert(event, at: newIndex)
+            
+            eventTableView.moveRow(at: IndexPath(item: oldIndex, section: 0), to: IndexPath(item: newIndex, section: 0))
+            
         }
-        
-//        collectionReference.getDocuments { (snap, error) in
-//            guard let documents = snap?.documents else {return}
-//            for document in documents{
-//                let data = document.data()
-//                let newEvent = Event(data: data)
-//                self.events.append(newEvent)
-//                self.eventTableView.reloadData()
-//            }
-//        }
+    }
+    
+    func onEventRemoved(change : DocumentChange){//event removed
+        let oldIndex = Int(change.oldIndex)
+        events.remove(at: oldIndex)
+        eventTableView.deleteRows(at: [IndexPath(item: oldIndex, section: 0)], with: .fade)
     }
     
     
