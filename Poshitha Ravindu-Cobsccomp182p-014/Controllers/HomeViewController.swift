@@ -25,14 +25,17 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         db = Firestore.firestore()//init firestore
+        setupTabelViews()
         
+    }
+    
+    func setupTabelViews() {
         //setting delegate and data source
         eventTableView.delegate = self
         eventTableView.dataSource = self
         
         //register the table view
         eventTableView.register(UINib(nibName: Identifiers.eventCellIdentifier, bundle: nil), forCellReuseIdentifier: Identifiers.eventCellIdentifier)
-    
     }
  
     //when the view apears
@@ -85,7 +88,7 @@ class HomeViewController: UIViewController {
     
     func setEventListner() {//document listner
         
-        listner = db.collection("Events").addSnapshotListener({ (snap, error) in
+        listner = db.homeEvents.addSnapshotListener({ (snap, error) in
             if let error = error{
                 debugPrint(error.localizedDescription)
                 return
@@ -106,7 +109,10 @@ class HomeViewController: UIViewController {
             })
         })
     }
-    
+}
+
+//initilize delegate and data source
+extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     
     func onEventAdded(change : DocumentChange, event : Event){//event added
         
@@ -142,12 +148,6 @@ class HomeViewController: UIViewController {
         eventTableView.deleteRows(at: [IndexPath(item: oldIndex, section: 0)], with: .fade)
     }
     
-    
-}
-
-//initilize delegate and data source
-extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count
     }
@@ -161,6 +161,6 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        return 450
     }
 }

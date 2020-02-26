@@ -33,7 +33,7 @@
                         <viewLayoutGuide key="safeArea" id="N6V-Xc-2CU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="P5F-iz-IhC">
-                        <barButtonItem key="leftBarButtonItem" title="Sign In" id="ksM-dr-ewm">
+                        <barButtonItem key="leftBarButtonItem" title="Sign" id="ksM-dr-ewm">
                             <connections>
                                 <action selector="signInOutBtnClick:" destination="qeU-yV-1ga" id="Tez-EH-Wbc"/>
                             </connections>
@@ -70,6 +70,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SDd-Jv-7Vs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

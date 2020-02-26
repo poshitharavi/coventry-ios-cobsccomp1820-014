@@ -8,6 +8,16 @@
 
 import Firebase
 
+extension Firestore {
+    
+    var events : Query {//get all events
+        return collection("Events")
+    }
+    
+    var homeEvents : Query {//get all events order by the time stamp usefull to home page
+        return collection("Events").order(by: "timeStamp", descending: true)
+    }
+}
 
 extension Auth {
     
