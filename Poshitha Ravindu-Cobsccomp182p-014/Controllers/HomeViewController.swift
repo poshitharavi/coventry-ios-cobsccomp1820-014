@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     var events  = [Event]()
     var db : Firestore!
     var listner : ListenerRegistration!
+    var user : User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class HomeViewController: UIViewController {
         if let _ = Auth.auth().currentUser{
             signInOutBtn.title = "Sign Out"
             profileBarBtn.isEnabled = true
+            
         }else{
             signInOutBtn.title = "Sign In"
             profileBarBtn.isEnabled = false
@@ -163,4 +165,5 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 450
     }
+    
 }

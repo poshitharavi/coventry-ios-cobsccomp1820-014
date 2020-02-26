@@ -48,7 +48,7 @@ class MyEventViewController: UIViewController {
     
     func setMyEventListner(){
         
-        listner = db.events.whereField("publisherId", isEqualTo: "vZOhudqZ42KcS6W78E0L").addSnapshotListener({ (snap, error) in
+        listner = db.UserAddedEvents(userId : "vZOhudqZ42KcS6W78E0L").addSnapshotListener({ (snap, error) in
             if let error = error {
                 debugPrint(error.localizedDescription)
                 return
@@ -68,6 +68,10 @@ class MyEventViewController: UIViewController {
                 }
             })
         })
+    }
+    
+    
+    @IBAction func addEventBtnClick(_ sender: Any) {
     }
     
 }

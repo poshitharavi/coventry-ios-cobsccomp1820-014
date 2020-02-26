@@ -31,3 +31,7 @@ struct AppColors {
 struct Identifiers {
     static let eventCellIdentifier = "EventTableViewCell"
 }
+
+struct Segues {
+   
+}

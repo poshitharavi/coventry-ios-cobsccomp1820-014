@@ -18,14 +18,6 @@
             </objects>
             <point key="canvasLocation" x="1386" y="-366"/>
         </scene>
-        <!--Event-->
-        <scene sceneID="Xmu-Lh-K9g">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Event" id="L6D-jG-1bX" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqc-Ba-Uox" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1412" y="479"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="psf-7V-1wj">
             <objects>
@@ -268,7 +260,8 @@
                     <navigationItem key="navigationItem" title="My Events" id="hse-FG-Gqc">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="iko-X4-hxM">
                             <connections>
-                                <segue destination="tYN-0Z-xhH" kind="show" id="2Pa-V0-3b9"/>
+                                <action selector="addEventBtnClick:" destination="Who-tG-JBs" id="VCc-9H-rP9"/>
+                                <segue destination="tYN-0Z-xhH" kind="show" identifier="ToCreateEvent" id="2Pa-V0-3b9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -283,21 +276,104 @@
         <!--Create Event-->
         <scene sceneID="2hQ-At-JCn">
             <objects>
-                <viewController title="Create Event" id="tYN-0Z-xhH" sceneMemberID="viewController">
+                <viewController title="Create Event" id="tYN-0Z-xhH" customClass="CreateNewEventViewController" customModule="Poshitha_Ravindu_Cobsccomp182p_014" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M6j-8R-ob2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wI1-IW-FiA">
+                                <rect key="frame" x="20" y="108" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A35-YF-bHf">
+                                <rect key="frame" x="20" y="150" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Discription" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yiF-EL-NKw">
+                                <rect key="frame" x="20" y="192" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="o3x-S8-yea"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oo-oI-NId" customClass="RoundedButton" customModule="Poshitha_Ravindu_Cobsccomp182p_014" customModuleProvider="target">
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bef-x6-EsX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Add Event">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="eventSubmitButtonClick:" destination="tYN-0Z-xhH" eventType="touchUpInside" id="Yba-5d-8Z7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add the event Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKP-Rp-sox">
+                                <rect key="frame" x="20" y="262" width="374" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="EDg-e0-dxb" customClass="RoundedImageView" customModule="Poshitha_Ravindu_Cobsccomp182p_014" customModuleProvider="target">
+                                <rect key="frame" x="32" y="304.5" width="350" height="250"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="7UC-jG-XGk"/>
+                                    <constraint firstAttribute="width" constant="350" id="lkk-As-QWZ"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WF8-as-0Ie">
+                                <rect key="frame" x="189" y="574" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pKP-Rp-sox" firstAttribute="leading" secondItem="rvm-re-XoT" secondAttribute="leading" constant="20" id="6pb-K0-tDY"/>
+                            <constraint firstItem="rvm-re-XoT" firstAttribute="trailing" secondItem="2oo-oI-NId" secondAttribute="trailing" constant="20" id="Eqb-XL-9nJ"/>
+                            <constraint firstItem="rvm-re-XoT" firstAttribute="trailing" secondItem="A35-YF-bHf" secondAttribute="trailing" constant="20" id="Hg1-G2-SwR"/>
+                            <constraint firstItem="A35-YF-bHf" firstAttribute="top" secondItem="wI1-IW-FiA" secondAttribute="bottom" constant="12" id="O24-yT-iu0"/>
+                            <constraint firstItem="rvm-re-XoT" firstAttribute="trailing" secondItem="pKP-Rp-sox" secondAttribute="trailing" constant="20" id="OUQ-xn-HEm"/>
+                            <constraint firstItem="yiF-EL-NKw" firstAttribute="top" secondItem="A35-YF-bHf" secondAttribute="bottom" constant="12" id="SBm-3Y-53J"/>
+                            <constraint firstItem="EDg-e0-dxb" firstAttribute="top" secondItem="pKP-Rp-sox" secondAttribute="bottom" constant="20" id="SQs-h3-IE0"/>
+                            <constraint firstItem="rvm-re-XoT" firstAttribute="trailing" secondItem="yiF-EL-NKw" secondAttribute="trailing" constant="20" id="UkT-Y6-dY9"/>
+                            <constraint firstItem="wI1-IW-FiA" firstAttribute="top" secondItem="rvm-re-XoT" secondAttribute="top" constant="20" id="bl8-is-k04"/>
+                            <constraint firstItem="EDg-e0-dxb" firstAttribute="centerX" secondItem="M6j-8R-ob2" secondAttribute="centerX" id="ePq-w6-jGS"/>
+                            <constraint firstItem="pKP-Rp-sox" firstAttribute="top" secondItem="yiF-EL-NKw" secondAttribute="bottom" constant="20" id="gOT-MM-ERd"/>
+                            <constraint firstItem="2oo-oI-NId" firstAttribute="leading" secondItem="rvm-re-XoT" secondAttribute="leading" constant="20" id="i8f-bP-06N"/>
+                            <constraint firstItem="rvm-re-XoT" firstAttribute="bottom" secondItem="2oo-oI-NId" secondAttribute="bottom" constant="20" id="m6h-RZ-r13"/>
+                            <constraint firstItem="A35-YF-bHf" firstAttribute="leading" secondItem="rvm-re-XoT" secondAttribute="leading" constant="20" id="nEX-IT-Vld"/>
+                            <constraint firstItem="wI1-IW-FiA" firstAttribute="leading" secondItem="rvm-re-XoT" secondAttribute="leading" constant="20" id="srf-V7-Ckz"/>
+                            <constraint firstItem="yiF-EL-NKw" firstAttribute="leading" secondItem="rvm-re-XoT" secondAttribute="leading" constant="20" id="tBx-ff-YMB"/>
+                            <constraint firstItem="rvm-re-XoT" firstAttribute="trailing" secondItem="wI1-IW-FiA" secondAttribute="trailing" constant="20" id="xkD-94-M9z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rvm-re-XoT"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="WF8-as-0Ie" id="0LT-It-beb"/>
+                        <outlet property="eventDiscriptionTxt" destination="yiF-EL-NKw" id="12u-1p-ja2"/>
+                        <outlet property="eventImageView" destination="EDg-e0-dxb" id="guZ-Nc-3CR"/>
+                        <outlet property="eventLocationTxt" destination="A35-YF-bHf" id="7Ww-Sl-Cw1"/>
+                        <outlet property="eventNameTxt" destination="wI1-IW-FiA" id="AEh-xT-cJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chQ-KD-Loc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2690" y="826"/>
+            <point key="canvasLocation" x="2705.7971014492755" y="831.69642857142856"/>
         </scene>
     </scenes>
     <resources>
         <image name="background_image" width="592" height="1080"/>
+        <image name="camera" width="512" height="512"/>
         <image name="event_pic_2" width="275" height="183"/>
     </resources>
 </document>

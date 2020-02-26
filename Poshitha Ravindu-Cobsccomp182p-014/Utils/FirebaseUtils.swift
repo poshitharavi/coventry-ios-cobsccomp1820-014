@@ -17,6 +17,14 @@ extension Firestore {
     var homeEvents : Query {//get all events order by the time stamp usefull to home page
         return collection("Events").order(by: "timeStamp", descending: true)
     }
+    
+    var users : Query {//user colleaction
+        return collection("Users")
+    }
+    
+    func UserAddedEvents(userId : String) -> Query { //get the user added events to my events
+        return collection("Events").whereField("publisherId", isEqualTo: userId).order(by: "timeStamp", descending: true)
+    }
 }
 
 extension Auth {
