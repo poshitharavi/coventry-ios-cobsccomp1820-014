@@ -25,20 +25,19 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     //variables
     var db : Firestore!
-    
+    var loggedUserId : String!
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
-        
+        loggedUserId = UserDefaults.standard.string(forKey: UserDefaultsId.userIdUserdefault)
         activityIndicator.startAnimating()//start animating in begiing
-        
         fetchDocument()
     }
     
 
     func fetchDocument(){
         
-        let docRef = db.collection("Users").document("vZOhudqZ42KcS6W78E0L")
+        let docRef = db.collection("Users").document(loggedUserId)
         
         docRef.getDocument { (snap, error) in
             guard let data = snap?.data() else{return}

@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
         db = Firestore.firestore()//init firestore
         setupTabelViews()
         
+        
     }
     
     func setupTabelViews() {
@@ -45,6 +46,7 @@ class HomeViewController: UIViewController {
         if let _ = Auth.auth().currentUser{
             signInOutBtn.title = "Sign Out"
             profileBarBtn.isEnabled = true
+            getLoggedUserDetails()
             
         }else{
             signInOutBtn.title = "Sign In"
@@ -79,6 +81,29 @@ class HomeViewController: UIViewController {
         
     }
     
+    func getLoggedUserDetails(){
+        
+        
+        guard let email =  Auth.auth().currentUser?.email else { return }
+        //get user details from firebase
+        db.userByEmail(email: email)
+            .getDocuments() { (snap, error) in
+                if let error = error{
+                    debugPrint(error.localizedDescription)
+                    return
+                }
+
+                snap?.documents.forEach({ (doc) in
+                    let data = doc.data()
+                    let loggedUser = User.init(data: data)
+                    
+                    UserDefaults.standard.set(loggedUser.id, forKey: UserDefaultsId.userIdUserdefault)//save user id to user default
+                    UserDefaults.standard.set(loggedUser.name, forKey: UserDefaultsId.userNameUserdefault)//save user name for user default
+                    
+                })
+
+        }
+    }
     
     //open the signin page
     fileprivate func presentLoginController(){

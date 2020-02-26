@@ -18,13 +18,15 @@ class MyEventViewController: UIViewController {
     var myEvents = [Event]()
     var db : Firestore!
     var listner : ListenerRegistration!
+    var loggedUserId : String!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loggedUserId = UserDefaults.standard.string(forKey: UserDefaultsId.userIdUserdefault)
         db = Firestore.firestore()//init firestore
         setUptableView()
+        
     }
     
     func setUptableView(){
@@ -48,7 +50,7 @@ class MyEventViewController: UIViewController {
     
     func setMyEventListner(){
         
-        listner = db.UserAddedEvents(userId : "vZOhudqZ42KcS6W78E0L").addSnapshotListener({ (snap, error) in
+        listner = db.UserAddedEvents(userId : loggedUserId).addSnapshotListener({ (snap, error) in
             if let error = error {
                 debugPrint(error.localizedDescription)
                 return

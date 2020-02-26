@@ -35,3 +35,8 @@ struct Identifiers {
 struct Segues {
    
 }
+
+struct UserDefaultsId {
+    static let userIdUserdefault = "loggedUserId"
+    static let userNameUserdefault = "loggedUserName"
+}

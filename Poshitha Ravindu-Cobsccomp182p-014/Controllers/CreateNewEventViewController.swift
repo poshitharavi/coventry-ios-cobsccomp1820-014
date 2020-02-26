@@ -23,10 +23,15 @@ class CreateNewEventViewController: UIViewController {
     //image viewer
     @IBOutlet weak var eventImageView: RoundedImageView!
     
+    //variable
+    var loggedUserID : String!
+    var loggedUserName : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loggedUserID = UserDefaults.standard.string(forKey: UserDefaultsId.userIdUserdefault)
+        loggedUserName = UserDefaults.standard.string(forKey: UserDefaultsId.userNameUserdefault)
         let tap = UITapGestureRecognizer(target: self, action: #selector(imgTap(_:))) //tap event inilize
         tap.numberOfTapsRequired = 1 // set tap count
         eventImageView.isUserInteractionEnabled = true //set user interaction true
@@ -93,10 +98,10 @@ class CreateNewEventViewController: UIViewController {
                                id: "",
                                discription: eventDiscriptionTxt.text ?? "",
                                location: eventLocationTxt.text ?? "",
-                               publisher: "Poshitha Ravindu",
+                               publisher: loggedUserName,
                                eventimageUrl: url,
                                timeStamp: Timestamp(),
-                               publisherId: "vZOhudqZ42KcS6W78E0L",
+                               publisherId: loggedUserID,
                                participating: [""])
         
         docRef = Firestore.firestore().collection("Events").document()

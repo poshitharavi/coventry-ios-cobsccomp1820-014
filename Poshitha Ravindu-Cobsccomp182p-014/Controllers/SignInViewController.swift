@@ -18,6 +18,9 @@ class SignInViewController: UIViewController {
     //activity indicator
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    //variables
+    var db : Firestore!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,10 +52,13 @@ class SignInViewController: UIViewController {
                 self?.activityIndicator.stopAnimating()
                 return
             }
+        
             self?.activityIndicator.stopAnimating()//stop the animation
             self?.dismiss(animated: true, completion: nil)
             
         }
+        
+        
     }
  
     

@@ -22,6 +22,10 @@ extension Firestore {
         return collection("Users")
     }
     
+    func userByEmail(email : String) -> Query {
+        return collection("Users").whereField("email", isEqualTo: email)
+    }
+    
     func UserAddedEvents(userId : String) -> Query { //get the user added events to my events
         return collection("Events").whereField("publisherId", isEqualTo: userId).order(by: "timeStamp", descending: true)
     }
