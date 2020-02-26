@@ -16,6 +16,21 @@ struct User {
     var facebooklink:String
     var profilepicUrl:String
     
+    init( name : String,
+          id : String,
+          email : String,
+          contactnumber : Int,
+          facebooklink : String,
+          profilepicUrl : String){
+        
+        self.name = name
+        self.id = id
+        self.email = email
+        self.contactnumber = contactnumber
+        self.facebooklink = facebooklink
+        self.profilepicUrl = profilepicUrl
+    }
+    
     
     init(data :[String : Any]) {
         self.name = data["name"] as? String ?? ""
@@ -24,5 +39,19 @@ struct User {
         self.contactnumber = data["contactnumber"] as? Int ?? 0
         self.facebooklink = data["facebooklink"] as? String ?? ""
         self.profilepicUrl = data["profilepicUrl"] as? String ?? ""
+    }
+    
+    static func modelToData(user : User) -> [String : Any] {
+        
+        let data : [String : Any] = [
+            "contactnumber": user.contactnumber,
+            "email" : user.email,
+            "facebooklink" : user.facebooklink,
+            "id" : user.id,
+            "name": user.name,
+            "profilepicUrl" : user.profilepicUrl
+        ]
+        
+        return data
     }
 }
