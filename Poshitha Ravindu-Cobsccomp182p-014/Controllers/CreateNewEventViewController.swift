@@ -20,12 +20,16 @@ class CreateNewEventViewController: UIViewController {
     //activity indicator
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    //button
+    @IBOutlet weak var addCategoryBtn: RoundedButton!
+    
     //image viewer
     @IBOutlet weak var eventImageView: RoundedImageView!
     
     //variable
     var loggedUserID : String!
     var loggedUserName : String!
+    var eventDetails : Event?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +40,24 @@ class CreateNewEventViewController: UIViewController {
         tap.numberOfTapsRequired = 1 // set tap count
         eventImageView.isUserInteractionEnabled = true //set user interaction true
         eventImageView.addGestureRecognizer(tap)//set the tap as a gesture to image view
+        
+        //if this is opening as edit form event details will nil
+        if let event = eventDetails {
+            eventNameTxt.text = event.title
+            eventLocationTxt.text = event.location
+            eventDiscriptionTxt.text = event.discription
+            
+            if let url = URL(string: event.eventimageUrl){
+                eventImageView.contentMode = .scaleAspectFit
+                eventImageView.kf.setImage(with: url)
+            }
+            
+            addCategoryBtn.setTitle("Save Changes", for: .normal)
+        }
+        
+        
+        
+        
     }
     
     @objc func imgTap(_ tap : UITapGestureRecognizer){//image tap recognizer

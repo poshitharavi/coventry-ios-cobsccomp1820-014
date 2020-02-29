@@ -19,6 +19,7 @@ class MyEventViewController: UIViewController {
     var db : Firestore!
     var listner : ListenerRegistration!
     var loggedUserId : String!
+    var selectedEvent : Event?
     
     
     override func viewDidLoad() {
@@ -123,9 +124,27 @@ extension MyEventViewController : UITableViewDelegate, UITableViewDataSource{
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.eventCellIdentifier, for: indexPath) as? EventTableViewCell {
             cell.configureCell(event: myEvents[indexPath.row])
+            cell.participatingBtn.tag = indexPath.row
+            cell.participatingBtn.setTitle("Edit Event", for: .normal)//change the xib name
+            cell.participatingBtn.addTarget(self, action: #selector(editEvent(_:)), for: .touchUpInside)
+            
             return cell
         }
         return UITableViewCell()
+    }
+    
+    @objc func editEvent(_ sender : UIButton){
+        selectedEvent = myEvents[sender.tag]
+        performSegue(withIdentifier: Segues.addEditSeque, sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.addEditSeque {
+            if let destination = segue.destination as? CreateNewEventViewController {
+                destination.eventDetails = selectedEvent
+                
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

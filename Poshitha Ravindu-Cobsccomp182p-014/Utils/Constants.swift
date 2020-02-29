@@ -33,7 +33,7 @@ struct Identifiers {
 }
 
 struct Segues {
-   
+    static let addEditSeque = "ToCreateEditEvent"
 }
 
 struct UserDefaultsId {
