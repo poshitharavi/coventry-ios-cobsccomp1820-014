@@ -47,12 +47,12 @@ class CreateNewEventViewController: UIViewController {
             eventLocationTxt.text = event.location
             eventDiscriptionTxt.text = event.discription
             
-            if let url = URL(string: event.eventimageUrl){
+            if let url = URL(string: event.eventimageUrl){//set the image to image viewer
                 eventImageView.contentMode = .scaleAspectFit
                 eventImageView.kf.setImage(with: url)
             }
             
-            addCategoryBtn.setTitle("Save Changes", for: .normal)
+            addCategoryBtn.setTitle("Save Changes", for: .normal)//change the button name
         }
         
         
@@ -126,8 +126,16 @@ class CreateNewEventViewController: UIViewController {
                                publisherId: loggedUserID,
                                participating: [""])
         
-        docRef = Firestore.firestore().collection("Events").document()
-        event.id = docRef.documentID
+        
+        if let eventToEdit = eventDetails {//edit event if event details is available
+            docRef = Firestore.firestore().collection("Events").document(eventToEdit.id)
+            event.id = eventToEdit.id
+        }else{
+            //create a new event
+            docRef = Firestore.firestore().collection("Events").document()
+            event.id = docRef.documentID
+        }
+        
         let data = Event.modelToData(event: event)
         docRef.setData(data, merge: true) { (error) in
             if let error = error {
