@@ -21,13 +21,13 @@ class HomeViewController: UIViewController {
     var db : Firestore!
     var listner : ListenerRegistration!
     var user : User!
+    var selectedUserEvent : Event!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         db = Firestore.firestore()//init firestore
         setupTabelViews()
-        
         
     }
     
@@ -99,9 +99,7 @@ class HomeViewController: UIViewController {
                     
                     UserDefaults.standard.set(loggedUser.id, forKey: UserDefaultsId.userIdUserdefault)//save user id to user default
                     UserDefaults.standard.set(loggedUser.name, forKey: UserDefaultsId.userNameUserdefault)//save user name for user default
-                    
                 })
-
         }
     }
     
@@ -182,6 +180,13 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: Identifiers.eventCellIdentifier , for: indexPath) as? EventTableViewCell {
             cell.configureCell(event: events[indexPath.row])
+            
+            cell.userNameBtn.tag = indexPath.row
+            cell.userNameBtn.addTarget(self, action: #selector(goToUser(_:)), for: .touchUpInside)
+            
+            cell.participatingBtn.tag = indexPath.row
+            cell.participatingBtn.addTarget(self, action: #selector(addParticipating(_:)), for: .touchUpInside)
+            
             return cell
         }
         return UITableViewCell()
@@ -191,4 +196,22 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
         return 450
     }
     
+    @objc func addParticipating(_ sender : UIButton){
+        customAlert(title: "Success", msg: "Your are added as a participant to this event")
+    }
+    
+    @objc func goToUser(_ sender : UIButton){
+        selectedUserEvent = events[sender.tag]
+        performSegue(withIdentifier: Segues.toProile, sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Segues.toProile {
+            if let destination = segue.destination as? ProfileViewController {
+                destination.eventOfUser = selectedUserEvent
+                
+            }
+        }
+    }
+   
 }

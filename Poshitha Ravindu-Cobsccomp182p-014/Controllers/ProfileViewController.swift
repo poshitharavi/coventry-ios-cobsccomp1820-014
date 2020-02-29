@@ -21,11 +21,15 @@ class ProfileViewController: UIViewController {
     //image view
     @IBOutlet weak var profileImgView: UIImageView!
     
+    //button
+    @IBOutlet weak var editProfileButton: UIButton!
+    
     //activity indicator
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     //variables
     var db : Firestore!
     var loggedUserId : String!
+    var eventOfUser : Event?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +37,35 @@ class ProfileViewController: UIViewController {
         loggedUserId = UserDefaults.standard.string(forKey: UserDefaultsId.userIdUserdefault)
         activityIndicator.startAnimating()//start animating in begiing
         
-        fetchLoggedUser()//fetch data of user
+        checkViewOpenMode()//fetch data of user
+    }
+    
+    func checkViewOpenMode(){//check the view is open to view another users details
+        
+        if let event = eventOfUser {
+            
+            if loggedUserId == event.publisherId{
+                fetchLoggedUser(userId: loggedUserId)
+            }else{
+                fetchLoggedUser(userId: event.publisherId)
+                navigationItem.rightBarButtonItem?.isEnabled = false
+                editProfileButton.isHidden = true
+            }
+        }else{
+            fetchLoggedUser(userId: loggedUserId)
+        }
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        fetchLoggedUser()
+       checkViewOpenMode()
     }
     
 
-    func fetchLoggedUser(){
+    func fetchLoggedUser(userId : String){
         
-        let docRef = db.collection("Users").document(loggedUserId)
+        let docRef = db.collection("Users").document(userId)
         
         docRef.getDocument { (snap, error) in
             guard let data = snap?.data() else{return}

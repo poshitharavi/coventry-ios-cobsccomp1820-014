@@ -61,6 +61,8 @@ class CreateNewEventViewController: UIViewController {
             }
             
             addCategoryBtn.setTitle("Save Changes", for: .normal)//change the button name
+        }else{
+            print("sadasda")
         }
         
     }

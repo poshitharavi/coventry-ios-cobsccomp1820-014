@@ -11,7 +11,6 @@
 		070FAEC123FB77B80075BF0B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070FAEC023FB77B80075BF0B /* Profile.storyboard */; };
 		07576A652405817500B3F313 /* MyEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07576A642405817500B3F313 /* MyEventViewController.swift */; };
 		07576A672406AC3F00B3F313 /* CreateNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07576A662406AC3F00B3F313 /* CreateNewEventViewController.swift */; };
-		07576A69240713E200B3F313 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07576A68240713E200B3F313 /* Global.swift */; };
 		07ABF12224012CAB00E83479 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ABF12124012CAB00E83479 /* Extensions.swift */; };
 		07ABF1242401333700E83479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07ABF1232401333700E83479 /* GoogleService-Info.plist */; };
 		07BE8589240A64F100EE97AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BE8588240A64F000EE97AE /* EditProfileViewController.swift */; };
@@ -61,7 +60,6 @@
 		070FAEC023FB77B80075BF0B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		07576A642405817500B3F313 /* MyEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventViewController.swift; sourceTree = "<group>"; };
 		07576A662406AC3F00B3F313 /* CreateNewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventViewController.swift; sourceTree = "<group>"; };
-		07576A68240713E200B3F313 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		07ABF12124012CAB00E83479 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		07ABF1232401333700E83479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		07BE8588240A64F000EE97AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 				07ABF12124012CAB00E83479 /* Extensions.swift */,
 				07D1FE1F240174150038D2ED /* Constants.swift */,
 				07D1FE292401B9740038D2ED /* FirebaseUtils.swift */,
-				07576A68240713E200B3F313 /* Global.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -536,7 +533,6 @@
 				07ABF12224012CAB00E83479 /* Extensions.swift in Sources */,
 				07D1FE23240180080038D2ED /* RoundedView.swift in Sources */,
 				07BE8589240A64F100EE97AE /* EditProfileViewController.swift in Sources */,
-				07576A69240713E200B3F313 /* Global.swift in Sources */,
 				07D1FE272401A8410038D2ED /* ForgotPasswordViewController.swift in Sources */,
 				07D1FE2A2401B9740038D2ED /* FirebaseUtils.swift in Sources */,
 				07D1FE302402A76B0038D2ED /* ProfileViewController.swift in Sources */,
