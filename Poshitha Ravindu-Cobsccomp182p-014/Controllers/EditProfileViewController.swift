@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import Kingfisher
+import LocalAuthentication
 
 class EditProfileViewController: UIViewController {
 
@@ -47,6 +48,44 @@ class EditProfileViewController: UIViewController {
         
         fetchLoggedUser()//fetchData of user
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        accessTouchIDOrFaceId()
+    }
+    
+    func accessTouchIDOrFaceId(){
+        let myContext = LAContext()
+        let myLocalizedReasonString = "Biometric Authntication testing !! "
+        
+        var authError: NSError?
+        if #available(iOS 8.0, macOS 10.12.1, *) {
+            if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+                myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+                    
+                    DispatchQueue.main.async {
+                        if success {
+                            // User authenticated successfully, take appropriate action
+                           self.customAlert(title: "Success", msg:  "Awesome!!... User authenticated successfully")
+                        } else {
+                            // User did not authenticate successfully, look at error and take appropriate action
+                            self.customAlert(title: "Error", msg:  "Sorry!!... User did not authenticate successfully")
+                        }
+                    }
+                }
+            } else {
+                // Could not evaluate policy; look at authError and present an appropriate message to user
+               customAlert(title: "Error", msg:  "Sorry!!.. Could not evaluate policy.")
+            }
+        } else {
+            // Fallback on earlier versions
+            
+            customAlert(title: "Error", msg:  "Ooops!!.. This feature is not supported.")
+        }
+    }
+    
+    
+    
+    
     
     @objc func imgTap(_ tap : UITapGestureRecognizer){//image tap recognizer
         
