@@ -131,7 +131,7 @@
         <!--Edit Profile-->
         <scene sceneID="EdE-SC-HU1">
             <objects>
-                <viewController title="Edit Profile" id="NfQ-eg-GsT" sceneMemberID="viewController">
+                <viewController title="Edit Profile" id="NfQ-eg-GsT" customClass="EditProfileViewController" customModule="Poshitha_Ravindu_Cobsccomp182p_014" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Iz-jz-Feh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Wwx-26-eVx">
-                                <rect key="frame" x="20" y="98" width="374" height="550"/>
+                                <rect key="frame" x="20" y="98" width="374" height="480"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="IT2-6L-9AW">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
@@ -158,17 +158,8 @@
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZm-hl-W6q">
-                                        <rect key="frame" x="0.0" y="300" width="374" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="wHe-KH-X01"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxE-eH-ebv">
-                                        <rect key="frame" x="0.0" y="370" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="300" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="FIZ-rB-t9S"/>
                                         </constraints>
@@ -177,7 +168,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Facebook Link" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JNP-4y-bPK">
-                                        <rect key="frame" x="0.0" y="440" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="370" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="zgV-KU-oEL"/>
                                         </constraints>
@@ -186,31 +177,47 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSc-tG-fdR" customClass="RoundedButton" customModule="Poshitha_Ravindu_Cobsccomp182p_014" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="510" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="440" width="374" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Orh-AY-bSo"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                        <state key="normal" title="Update">
+                                        <state key="normal" title="Save Changes">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveChangesBtnClick:" destination="NfQ-eg-GsT" eventType="touchUpInside" id="NOO-SI-gKb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ug9-Wr-Urh">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Wwx-26-eVx" firstAttribute="top" secondItem="ey2-9L-9AC" secondAttribute="top" constant="10" id="1rS-Wc-9FP"/>
                             <constraint firstItem="0rU-Cp-Y7f" firstAttribute="top" secondItem="ey2-9L-9AC" secondAttribute="top" id="3jY-Y6-m1E"/>
                             <constraint firstItem="0rU-Cp-Y7f" firstAttribute="trailing" secondItem="ey2-9L-9AC" secondAttribute="trailing" id="6YK-WC-fmP"/>
+                            <constraint firstItem="ug9-Wr-Urh" firstAttribute="centerX" secondItem="0Iz-jz-Feh" secondAttribute="centerX" id="7AI-MN-bBJ"/>
                             <constraint firstAttribute="bottom" secondItem="0rU-Cp-Y7f" secondAttribute="bottom" id="9Mn-ko-wWI"/>
                             <constraint firstItem="0rU-Cp-Y7f" firstAttribute="leading" secondItem="ey2-9L-9AC" secondAttribute="leading" id="FlU-c0-mEu"/>
                             <constraint firstItem="Wwx-26-eVx" firstAttribute="leading" secondItem="ey2-9L-9AC" secondAttribute="leading" constant="20" id="TjB-I8-3hC"/>
                             <constraint firstItem="ey2-9L-9AC" firstAttribute="trailing" secondItem="Wwx-26-eVx" secondAttribute="trailing" constant="20" id="mrZ-SF-kdy"/>
+                            <constraint firstItem="ug9-Wr-Urh" firstAttribute="centerY" secondItem="0Iz-jz-Feh" secondAttribute="centerY" id="rJZ-vx-yY4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ey2-9L-9AC"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ug9-Wr-Urh" id="Gq5-PQ-n0o"/>
+                        <outlet property="facebookLinkTxt" destination="JNP-4y-bPK" id="LQv-Ao-McG"/>
+                        <outlet property="mobileNumberTxt" destination="oxE-eH-ebv" id="pLw-D6-kcp"/>
+                        <outlet property="nameTxt" destination="0Dj-AI-abn" id="HJd-Kf-oKN"/>
+                        <outlet property="profileImageView" destination="IT2-6L-9AW" id="Vse-9c-hpp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Hl-0w-2uz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

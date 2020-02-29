@@ -40,7 +40,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Profile" id="58V-4O-7TW">
                             <connections>
-                                <segue destination="e44-Qx-QSX" kind="show" id="bSK-04-kkI"/>
+                                <segue destination="e44-Qx-QSX" kind="show" identifier="ToProfile" id="bSK-04-kkI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -26,16 +26,22 @@ class ProfileViewController: UIViewController {
     //variables
     var db : Firestore!
     var loggedUserId : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         db = Firestore.firestore()
         loggedUserId = UserDefaults.standard.string(forKey: UserDefaultsId.userIdUserdefault)
         activityIndicator.startAnimating()//start animating in begiing
-        fetchDocument()
+        
+        fetchLoggedUser()//fetch data of user
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchLoggedUser()
     }
     
 
-    func fetchDocument(){
+    func fetchLoggedUser(){
         
         let docRef = db.collection("Users").document(loggedUserId)
         

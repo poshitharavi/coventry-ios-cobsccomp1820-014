@@ -33,13 +33,21 @@ class CreateNewEventViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //get the user details in user default
         loggedUserID = UserDefaults.standard.string(forKey: UserDefaultsId.userIdUserdefault)
         loggedUserName = UserDefaults.standard.string(forKey: UserDefaultsId.userNameUserdefault)
+        
+        //set the gesture to image viwer
         let tap = UITapGestureRecognizer(target: self, action: #selector(imgTap(_:))) //tap event inilize
         tap.numberOfTapsRequired = 1 // set tap count
         eventImageView.isUserInteractionEnabled = true //set user interaction true
         eventImageView.addGestureRecognizer(tap)//set the tap as a gesture to image view
+        
+        checkAnyEventToUpdate()//check the view is open to edit an evenet
+        
+    }
+    
+    func checkAnyEventToUpdate() {
         
         //if this is opening as edit form event details will nil
         if let event = eventDetails {
@@ -55,13 +63,9 @@ class CreateNewEventViewController: UIViewController {
             addCategoryBtn.setTitle("Save Changes", for: .normal)//change the button name
         }
         
-        
-        
-        
     }
     
     @objc func imgTap(_ tap : UITapGestureRecognizer){//image tap recognizer
-        
         launchImagePicker()
     }
     
@@ -112,6 +116,7 @@ class CreateNewEventViewController: UIViewController {
         }
     }
     
+    //upload the data to the firesotore
     func uploadDocument(url : String) {
         
         var docRef : DocumentReference!
@@ -166,15 +171,16 @@ extension CreateNewEventViewController : UIImagePickerControllerDelegate, UINavi
         present(imagePicker,animated: true, completion: nil)
     }
     
-    
+    //after picking the media
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         guard let image = info[.originalImage] as? UIImage else {return}
-        eventImageView.contentMode = .scaleAspectFit
+        eventImageView.contentMode = .scaleAspectFill
         eventImageView.image = image
         dismiss(animated: true, completion: nil)
     }
     
+    //if imge selector cancelled
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }

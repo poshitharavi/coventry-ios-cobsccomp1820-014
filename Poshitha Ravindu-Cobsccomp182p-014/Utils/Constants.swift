@@ -34,6 +34,7 @@ struct Identifiers {
 
 struct Segues {
     static let addEditSeque = "ToCreateEditEvent"
+    static let toProile = "ToProfile"
 }
 
 struct UserDefaultsId {

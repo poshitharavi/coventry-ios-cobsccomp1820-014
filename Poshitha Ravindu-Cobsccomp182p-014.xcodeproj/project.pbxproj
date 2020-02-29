@@ -14,6 +14,7 @@
 		07576A69240713E200B3F313 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07576A68240713E200B3F313 /* Global.swift */; };
 		07ABF12224012CAB00E83479 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ABF12124012CAB00E83479 /* Extensions.swift */; };
 		07ABF1242401333700E83479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07ABF1232401333700E83479 /* GoogleService-Info.plist */; };
+		07BE8589240A64F100EE97AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BE8588240A64F000EE97AE /* EditProfileViewController.swift */; };
 		07C4F36223F88DD500A9C4BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C4F36123F88DD500A9C4BE /* AppDelegate.swift */; };
 		07C4F36723F88DD500A9C4BE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36523F88DD500A9C4BE /* Login.storyboard */; };
 		07C4F36923F88DD700A9C4BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C4F36823F88DD700A9C4BE /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		07576A68240713E200B3F313 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		07ABF12124012CAB00E83479 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		07ABF1232401333700E83479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		07BE8588240A64F000EE97AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		07C4F35E23F88DD500A9C4BE /* Poshitha Ravindu-Cobsccomp182p-014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poshitha Ravindu-Cobsccomp182p-014.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C4F36123F88DD500A9C4BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C4F36623F88DD500A9C4BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				07C7DB8C23FDA98C00E7356E /* HomeViewController.swift */,
 				07D1FE2F2402A76B0038D2ED /* ProfileViewController.swift */,
 				07576A642405817500B3F313 /* MyEventViewController.swift */,
+				07BE8588240A64F000EE97AE /* EditProfileViewController.swift */,
 				07576A662406AC3F00B3F313 /* CreateNewEventViewController.swift */,
 			);
 			path = Controllers;
@@ -532,6 +535,7 @@
 				07C7DB8023FD58B200E7356E /* SignInViewController.swift in Sources */,
 				07ABF12224012CAB00E83479 /* Extensions.swift in Sources */,
 				07D1FE23240180080038D2ED /* RoundedView.swift in Sources */,
+				07BE8589240A64F100EE97AE /* EditProfileViewController.swift in Sources */,
 				07576A69240713E200B3F313 /* Global.swift in Sources */,
 				07D1FE272401A8410038D2ED /* ForgotPasswordViewController.swift in Sources */,
 				07D1FE2A2401B9740038D2ED /* FirebaseUtils.swift in Sources */,
