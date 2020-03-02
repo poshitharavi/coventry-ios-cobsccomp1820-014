@@ -11,6 +11,7 @@
 		070FAEC123FB77B80075BF0B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070FAEC023FB77B80075BF0B /* Profile.storyboard */; };
 		07576A652405817500B3F313 /* MyEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07576A642405817500B3F313 /* MyEventViewController.swift */; };
 		07576A672406AC3F00B3F313 /* CreateNewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07576A662406AC3F00B3F313 /* CreateNewEventViewController.swift */; };
+		0795D52A240D2D0F00C49E0B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0795D529240D2D0F00C49E0B /* CoreLocation.framework */; };
 		07ABF12224012CAB00E83479 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ABF12124012CAB00E83479 /* Extensions.swift */; };
 		07ABF1242401333700E83479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07ABF1232401333700E83479 /* GoogleService-Info.plist */; };
 		07BE8589240A64F100EE97AE /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BE8588240A64F000EE97AE /* EditProfileViewController.swift */; };
@@ -60,6 +61,7 @@
 		070FAEC023FB77B80075BF0B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		07576A642405817500B3F313 /* MyEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventViewController.swift; sourceTree = "<group>"; };
 		07576A662406AC3F00B3F313 /* CreateNewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewEventViewController.swift; sourceTree = "<group>"; };
+		0795D529240D2D0F00C49E0B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		07ABF12124012CAB00E83479 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		07ABF1232401333700E83479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		07BE8588240A64F000EE97AE /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0795D52A240D2D0F00C49E0B /* CoreLocation.framework in Frameworks */,
 				91E2B45B418BD6CD3A409E85 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +274,7 @@
 		B6FE9D3DE686D5E96E753660 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0795D529240D2D0F00C49E0B /* CoreLocation.framework */,
 				7692A85001F542F3CE0ACEAE /* Pods_Poshitha_Ravindu_Cobsccomp182p_014.framework */,
 				366CAD658CD819D8969A01D8 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014_Poshitha_Ravindu_Cobsccomp182p_014UITests.framework */,
 				11524A29FC74EFD51E1B9070 /* Pods_Poshitha_Ravindu_Cobsccomp182p_014Tests.framework */,

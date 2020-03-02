@@ -9,9 +9,10 @@
 import UIKit
 import FirebaseStorage
 import FirebaseFirestore
+import CoreLocation
 
-class CreateNewEventViewController: UIViewController {
-
+class CreateNewEventViewController: UIViewController ,CLLocationManagerDelegate {
+    
     //text boxes
     @IBOutlet weak var eventNameTxt: UITextField!
     @IBOutlet weak var eventLocationTxt: UITextField!
@@ -30,6 +31,7 @@ class CreateNewEventViewController: UIViewController {
     var loggedUserID : String!
     var loggedUserName : String!
     var eventDetails : Event?
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,8 +83,8 @@ class CreateNewEventViewController: UIViewController {
         
         //get all the data from text fields and image view
         guard let image = eventImageView.image ,
-        let eventName = eventNameTxt.text , eventName.isNotEmpty,
-        let eventLocation = eventLocationTxt.text , eventLocation.isNotEmpty,
+            let eventName = eventNameTxt.text , eventName.isNotEmpty,
+            let eventLocation = eventLocationTxt.text , eventLocation.isNotEmpty,
             let eventDiscription = eventDiscriptionTxt.text , eventDiscription.isNotEmpty else {
                 customAlert(title: "Error", msg: "Must fill the all event details")
                 return
@@ -161,7 +163,7 @@ class CreateNewEventViewController: UIViewController {
         self.activityIndicator.stopAnimating()
         
     }
-
+    
 }
 
 extension CreateNewEventViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -186,4 +188,62 @@ extension CreateNewEventViewController : UIImagePickerControllerDelegate, UINavi
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func GetCurrentLocation(_ sender: Any) {
+        
+        eventLocationTxt.placeholder = "Fetching... your location"
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
+        
+        
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)->Void in
+            
+            if (error != nil) {
+                print("Reverse geocoder failed with error" + (error?.localizedDescription)!)
+                return
+            }
+            
+            if (placemarks?.count)! > 0 {
+                let pm = placemarks?[0]
+                self.displayLocationInfo(pm)
+            } else {
+                print("Problem with the data received from geocoder")
+            }
+        })
+    }
+    
+    func displayLocationInfo(_ placemark: CLPlacemark?) {
+        if let containsPlacemark = placemark {
+            //stop updating location to save battery life
+            locationManager.stopUpdatingLocation()
+            let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : "" as String
+            //let postalCode = (containsPlacemark.postalCode != nil) ? containsPlacemark.postalCode : ""
+            let administrativeArea = (containsPlacemark.administrativeArea != nil) ? containsPlacemark.administrativeArea : "" as String
+            //let country = (containsPlacemark.country != nil) ? containsPlacemark.country : ""
+            
+            eventLocationTxt.placeholder = "Event Location"
+            eventLocationTxt.text = "\(locality!) \(administrativeArea!)"
+            
+        }
+        
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error while updating location " + error.localizedDescription)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
 }
