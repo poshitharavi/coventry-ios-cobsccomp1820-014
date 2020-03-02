@@ -70,6 +70,8 @@ class HomeViewController: UIViewController {
         if let _ = Auth.auth().currentUser{
             
             do{
+                UserDefaults.standard.set("", forKey: UserDefaultsId.userIdUserdefault)//save user id to user default
+                UserDefaults.standard.set("", forKey: UserDefaultsId.userNameUserdefault)//save user name for user default
                 try Auth.auth().signOut()
                 presentLoginController()
             }catch{
@@ -82,8 +84,7 @@ class HomeViewController: UIViewController {
     }
     
     func getLoggedUserDetails(){
-        
-        
+
         guard let email =  Auth.auth().currentUser?.email else { return }
         //get user details from firebase
         db.userByEmail(email: email)
@@ -201,8 +202,15 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     @objc func goToUser(_ sender : UIButton){
+        
+        if UserDefaults.standard.string(forKey: UserDefaultsId.userIdUserdefault) != "" {
+            
         selectedUserEvent = events[sender.tag]
         performSegue(withIdentifier: Segues.toProile, sender: self)
+        }else{
+            
+            customAlert(title: "Error", msg: "Sign in to view the profile details")
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
